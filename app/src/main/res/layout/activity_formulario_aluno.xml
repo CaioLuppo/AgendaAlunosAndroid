@@ -1,70 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content">
 
-    android:orientation="vertical"
-
->
-
-    <EditText
-
-        android:id="@+id/activity_formulario_aluno_nome"
+    <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:layout_margin="@dimen/margin_caixa"
-        android:hint="@string/nome"
+        android:orientation="vertical">
 
-        android:autofillHints="nome"
-        android:inputType="textCapWords"
+        <EditText
 
-    />
+            android:id="@+id/activity_formulario_aluno_nome"
 
-    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:id="@+id/activity_formulario_aluno_telefone"
+            android:layout_margin="@dimen/margin_caixa"
+            android:autofillHints="nome"
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:hint="@string/nome"
+            android:inputType="textCapWords"
 
-        android:layout_margin="@dimen/margin_caixa"
-        android:hint="@string/telefone"
+            />
 
-        android:autofillHints="telefone"
-        android:inputType="phone"
+        <EditText
 
-    />
+            android:id="@+id/activity_formulario_aluno_telefone"
 
-    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:id="@+id/activity_formulario_aluno_email"
+            android:layout_margin="@dimen/margin_caixa"
+            android:autofillHints="telefone"
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:hint="@string/telefone"
+            android:inputType="phone"
 
-        android:layout_margin="@dimen/margin_caixa"
-        android:hint="@string/email"
+            />
 
-        android:autofillHints="email"
-        android:inputType="textEmailAddress"
+        <EditText
 
-    />
+            android:id="@+id/activity_formulario_aluno_email"
 
-    <Button
-        android:id="@+id/activity_formulario_aluno_botao_salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_caixa"
+            android:autofillHints="email"
 
-        android:layout_margin="@dimen/margin_caixa"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
 
-        android:text="@string/salvar"
+            />
 
-    />
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

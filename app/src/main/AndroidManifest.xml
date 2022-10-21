@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".AgendaApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,7 +14,9 @@
         android:theme="@style/Theme.Agenda"
         tools:targetApi="31">
 
-        <activity android:name=".ui.activity.FormularioAlunoActivity" android:exported="true" />
+        <activity
+            android:name=".ui.activity.FormularioAlunoActivity"
+            android:exported="true" />
 
         <activity
             android:name=".ui.activity.ListaAlunosActivity"
